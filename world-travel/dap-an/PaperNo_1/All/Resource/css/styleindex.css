@@ -1,0 +1,171 @@
+/* ==== HEADER ==== */
+.header-container {
+	margin: 0;
+}
+
+.header-search {
+	margin-top: 20px;
+}
+
+.header-logo {
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+}
+
+.header-text {
+	margin: 24px 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+	.header-logo {
+		margin: 0;
+	}
+	.header-text {
+		margin-bottom: 0;
+	}
+}
+
+/* ==== NAVBAR ==== */
+/* NOTE: Lưu ý do class .navbar-nav có "float: left" nên chỗ này phải đè cho mất cái "float" đi là xong */
+@media screen and (min-width: 768px) {
+	.navbar-center {
+		float: none;
+		margin: 0 auto;
+		display: table;
+	}
+}
+
+/* ==== CONTENT ==== */
+
+/* 1. Content left */
+.content-container {
+	margin: 0;
+}
+
+.box {
+	margin-bottom: 20px;
+	box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);
+	border: 1px solid green;
+}
+
+.box > p {
+	margin-left: 20px;
+}
+
+.box-header {
+	background-color: rgb(214, 248, 214);
+	margin: 0;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.box-thumb {
+	width: 30px;
+}
+
+/* 2. Content right */
+.content-thumbnail {
+	width: 100%;
+	object-fit: cover;
+	height: 200px;
+}
+
+.content-title {
+	padding: 20px 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.content-title h2 {
+	margin: 0;
+}
+
+.content-tour {
+	padding: 10px 0;
+	height: 100%;
+	margin: 0;
+	margin-bottom: 20px;
+	box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.content-img {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+
+.content-subtitle {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.content-tour-text {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.content-tour-text p {
+	font-size: 20px;
+}
+
+.booknow {
+	margin-top: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.booknow button {
+	padding: 10px 20px;
+	text-align: center;
+	background-color: lightgreen;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	color: black;
+}
+
+.booknow button:hover {
+	background-color: green;
+	color: white;
+}
+
+@media screen and (min-width: 768px) {
+	.content-container {
+		margin: 15px 10px;
+	}
+
+	.content-thumbnail {
+		height: auto;
+	}
+
+	.content-img {
+		margin-bottom: 0;
+	}
+
+	.content-tour {
+		display: flex;
+	}
+
+	.booknow {
+		justify-content: flex-end;
+	}
+}
+
+/* ==== FOOTER ==== */
+.footer {
+	background-color: #0ebfc4;
+	padding: 15px 0;
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
